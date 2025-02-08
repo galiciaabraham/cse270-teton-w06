@@ -15,7 +15,7 @@ class TestSmokeTests():
   #Headless method
   def setup_method(self, method):
     options = Options()
-    options.add_argument("--headless=new")
+    options.add_argument("-headless")
     self.driver = webdriver.Firefox(options=options)
     self.vars = {}
   # Using a browser tab in case you want to peak ;)
